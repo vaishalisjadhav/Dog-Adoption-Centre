@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
-
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #FFF;
 }
 
 .navbar {
@@ -51,45 +48,55 @@ body {
     color: #00ADB5;
 }
 
-.background-img {
-    position: relative;
+.main-header{
     text-align: center;
-    color: white;
-}
-
-.background-img img {
-    width: 100%;
-    height: auto;
-    opacity: 0.3;
-}
-
-.background-img h3 {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
-    text-align: center;
-    color: #222831;
     font-family: 'Times New Roman', Times, serif;
-    width: 100%;
+    margin-top: 50px;
+    color: #222831;
 }
 
-.background-img span {
+.main-header:hover{
     color: #00ADB5;
 }
 
-.background-img .description {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    width: 50%;
-    margin: 0;
-    padding: 10px;
-    color: #393E46; 
+.box-container{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    height: 300px;
+    width: 250px;
+    border: 1px solid black;
     border-radius: 5px;
+    margin: 50px;
     text-align: center;
+    padding: 15px;
+    background-color: #00ADB5;
+}
+
+.box:hover{
+    box-shadow: #222831 2px 2px;
+}
+
+.box img{
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.box img:hover{
+    height: 70px;
+    width: 70px;
+}
+
+.box h3{
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.box p{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #222831;
 }
