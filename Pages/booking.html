@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adoption Form</title>
+    <title>Dog Adoption Form</title>
     <link rel="stylesheet" href="/CSS/booking.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <img src="/images/footprint.png" alt="Dog">SHELTER <br>Help Animal
-        </div>
-        <div class="navbar-page-links">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./price.html">Price</a></li>
-                <li><a href="./booking.html">Booking</a></li>
-                <li><a href="./ontact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="form-box">
-        <h3>Enter Your Name</h3>
-        <input type="text" name="Name" required>
-        <h3>Enter Email Address</h3>
-        <input type="email" name="Email" id="email" required>
-        <h3>Enter Phone No.</h3>
-        <input type="text" name="Phone" id="phn" required>
-        <h3>Enter Your Address</h3>
-        <textarea name="Address" id="Address" required></textarea>
-        <h3>Why do you want to adopt a dog?</h3>
-        <textarea name="dog" id="dog"></textarea><br><br>
-        <button>Adopt</button>
+    <div class="container">
+        <h1>Dog Adoption Form</h1>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="dog-breed">Preferred Dog Breed:</label>
+                <select id="dog-breed" name="dog-breed" required>
+                    <option value="labrador">Labrador</option>
+                    <option value="golden-retriever">Golden Retriever</option>
+                    <option value="german-shepherd">German Shepherd</option>
+                    <option value="bulldog">Bulldog</option>
+                    <option value="beagle">Beagle</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="experience">Do you have previous experience with dogs?</label>
+                <input type="radio" id="experience-yes" name="experience" value="yes" required>
+                <label for="experience-yes">Yes</label>
+                <input type="radio" id="experience-no" name="experience" value="no" required>
+                <label for="experience-no">No</label>
+            </div>
+            <div class="form-group">
+                <label for="message">Additional Message:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
     </div>
 </body>
-
 </html>
